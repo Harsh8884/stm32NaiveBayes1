@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"stm32naivebayes\startup_stm32f103x6.o"
+"..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib"
+"stm32naivebayes\main.o"
+"stm32naivebayes\stm32f1xx_it.o"
+"stm32naivebayes\stm32f1xx_hal_msp.o"
+"stm32naivebayes\stm32f1xx_hal_gpio_ex.o"
+"stm32naivebayes\stm32f1xx_hal_adc.o"
+"stm32naivebayes\stm32f1xx_hal_adc_ex.o"
+"stm32naivebayes\stm32f1xx_hal.o"
+"stm32naivebayes\stm32f1xx_hal_rcc.o"
+"stm32naivebayes\stm32f1xx_hal_rcc_ex.o"
+"stm32naivebayes\stm32f1xx_hal_gpio.o"
+"stm32naivebayes\stm32f1xx_hal_dma.o"
+"stm32naivebayes\stm32f1xx_hal_cortex.o"
+"stm32naivebayes\stm32f1xx_hal_pwr.o"
+"stm32naivebayes\stm32f1xx_hal_flash.o"
+"stm32naivebayes\stm32f1xx_hal_flash_ex.o"
+"stm32naivebayes\stm32f1xx_hal_exti.o"
+"stm32naivebayes\stm32f1xx_hal_tim.o"
+"stm32naivebayes\stm32f1xx_hal_tim_ex.o"
+"stm32naivebayes\stm32f1xx_hal_uart.o"
+"stm32naivebayes\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "stm32NaiveBayes\stm32NaiveBayes.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "stm32NaiveBayes.map" -o stm32NaiveBayes\stm32NaiveBayes.axf
